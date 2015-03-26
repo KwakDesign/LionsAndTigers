@@ -108,31 +108,33 @@ class ViewController: UIViewController {
         switch currentAnimal {
         case("Tiger", _) :
             let randomIndex = Int(arc4random_uniform(UInt32(lions.count)))
-            currentAnimal = ("Lions", randomIndex)
+            currentAnimal = ("Lion", randomIndex)
         default :
             let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
-            currentAnimal = ("Tigers", randomIndex)
+            currentAnimal = ("Tiger", randomIndex)
         }
     }
     
     func updateView() {
+        
         UIView.transitionWithView(self.view, duration: 2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
             if self.currentAnimal.species == "Tiger" {
                 let tiger = self.myTigers[self.currentAnimal.index]
                 self.myImageView.image = tiger.image
-                self.nameLabel.text = tiger.name
-                self.ageLabel.text = "\(tiger.age)"
                 self.breedLabel.text = tiger.breed
+                self.ageLabel.text = "\(tiger.age)"
+                self.nameLabel.text = tiger.name
                 self.randomFactLabel.text = tiger.randomFact()
             }
             else if self.currentAnimal.species == "Lion" {
                 let lion = self.lions[self.currentAnimal.index]
                 self.myImageView.image = lion.image
-                self.nameLabel.text = lion.name
-                self.ageLabel.text = "\(lion.age)"
                 self.breedLabel.text = lion.subspecies
+                self.ageLabel.text = "\(lion.age)"
+                self.nameLabel.text = lion.name
             }
-                self.randomFactLabel.hidden = false
+            
+             self.randomFactLabel.hidden = false
             
             }, completion: {
                 (finished: Bool) -> () in
