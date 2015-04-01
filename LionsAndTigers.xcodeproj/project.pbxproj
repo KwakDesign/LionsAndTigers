@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		794198731ACB6607009FEC1B /* LionCubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794198721ACB6607009FEC1B /* LionCubs.swift */; };
 		794594861AAD2C7F00D5C426 /* Tigers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794594851AAD2C7F00D5C426 /* Tigers.swift */; };
 		7945948F1AAD3B7B00D5C426 /* BengalTiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 794594871AAD3B7B00D5C426 /* BengalTiger.jpg */; };
 		794594901AAD3B7B00D5C426 /* IndochineseTiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 794594881AAD3B7B00D5C426 /* IndochineseTiger.jpg */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		794198721ACB6607009FEC1B /* LionCubs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LionCubs.swift; sourceTree = "<group>"; };
 		794594851AAD2C7F00D5C426 /* Tigers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tigers.swift; sourceTree = "<group>"; };
 		794594871AAD3B7B00D5C426 /* BengalTiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BengalTiger.jpg; sourceTree = "<group>"; };
 		794594881AAD3B7B00D5C426 /* IndochineseTiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IndochineseTiger.jpg; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				7988A9441AAD276400666778 /* AppDelegate.swift */,
 				7988A9461AAD276400666778 /* ViewController.swift */,
 				7979BBFB1AC1038E005E4951 /* Lions.swift */,
+				794198721ACB6607009FEC1B /* LionCubs.swift */,
 				794594851AAD2C7F00D5C426 /* Tigers.swift */,
 				7988A9481AAD276400666778 /* Main.storyboard */,
 				7988A94B1AAD276400666778 /* Images.xcassets */,
@@ -252,6 +255,7 @@
 			files = (
 				7988A9471AAD276400666778 /* ViewController.swift in Sources */,
 				794594861AAD2C7F00D5C426 /* Tigers.swift in Sources */,
+				794198731ACB6607009FEC1B /* LionCubs.swift in Sources */,
 				7988A9451AAD276400666778 /* AppDelegate.swift in Sources */,
 				7979BBFC1AC1038E005E4951 /* Lions.swift in Sources */,
 			);

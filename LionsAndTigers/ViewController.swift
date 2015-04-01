@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     var myTigers:[Tiger] = []
     var lions:[Lion] = []
+    var lionCubs:[LionCub] = []
     
     var currentIndex = 0
     
@@ -90,8 +91,31 @@ class ViewController: UIViewController {
         lioness.subspecies = "Barbary"
         lioness.isAlphaMale = false
         
+        lion.roar()
+        lioness.roar()
+        
+        lion.changeToAlpha()
+//        print(lion.isAlphaMale)
+        
         self.lions += [lion, lioness]
         
+        var cub = LionCub()
+        cub.age = 1
+        cub.name = "Simba"
+        cub.image = UIImage(named: "LionCub1.jpg")
+        cub.subspecies = "Masai"
+        
+        cub.roar()
+        cub.rubBelly()
+        
+        var femaleCub = LionCub()
+        femaleCub.age = 1
+        femaleCub.name = "Nala"
+        femaleCub.image = UIImage(named: "LionCub2.jpeg")
+        femaleCub.subspecies = "Transvaal"
+        femaleCub.isAlphaMale = false
+        
+        self.lionCubs += [cub, femaleCub]
     }
 
     override func didReceiveMemoryWarning() {
@@ -132,6 +156,7 @@ class ViewController: UIViewController {
                 self.breedLabel.text = lion.subspecies
                 self.ageLabel.text = "\(lion.age)"
                 self.nameLabel.text = lion.name
+                self.randomFactLabel.text = lion.randomFact()
             }
             
              self.randomFactLabel.hidden = false
